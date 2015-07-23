@@ -234,7 +234,7 @@ function (Vector, Line) {
 
 		tone.type = 'sine';
 		tone.frequency.value = 200;
-		// tone.start();
+		tone.start();
 
 		tone.connect(volume);
 
