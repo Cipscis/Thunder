@@ -134,8 +134,6 @@ function (Vector, Line) {
 		if (debug) {
 			debugCtx.save();
 
-			debugCtx.clearRect(0, 0, debugCanvas.width, debugCanvas.height);
-
 			debugCtx.strokeStyle = '#f00';
 			debugCtx.beginPath();
 			debugCtx.arc(a.i, a.j, 3, 0, Math.PI*2);
@@ -209,6 +207,7 @@ function (Vector, Line) {
 
 		if (distance >= 900) {
 			lastTime = timestamp;
+			debugCtx.clearRect(0, 0, debugCanvas.width, debugCanvas.height);
 			lightningStrike();
 		}
 
