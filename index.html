@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Thunder</title>
+	<script src="content/scripts/lib/require/require.js" type="text/javascript"></script>
+	<script src="content/scripts/lib/require/config.js" type="text/javascript"></script>
+
+	<link rel="stylesheet" href="content/css/style.css" />
+</head>
+<body>
+	<script type="text/javascript">
+		require(['Thunder/Thunder'], function (thunder) {
+			thunder.init();
+		});
+	</script>
+
+	<p>Count: <span id="count"></span></p>
+	<p>Distance: <span id="distance"></span></p>
+
+
+	<canvas width="900" height="900" id="lightning"></canvas>
+	<canvas width="900" height="900" id="wave"></canvas>
+	<canvas width="900" height="900" id="observer"></canvas>
+	<canvas width="900" height="900" id="debug"></canvas>
+</body>
+</html>
