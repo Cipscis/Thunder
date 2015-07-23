@@ -1,0 +1,3 @@
+[submodule "content/scripts/app/Vector"]
+	path = content/scripts/app/Vector
+	url = https://github.com/Cipscis/Vector.git
